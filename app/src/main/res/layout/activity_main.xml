@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.m2i.fichiers.MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:background="#cccee4">
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/editTextSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:background="#12acf4"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:text="Save"
+        android:onClick="btnSave"/>
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:text="Save Ext"
+            android:onClick="saveExternal"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="100dp"
+        android:id="@+id/editTextLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:background="#12acf4"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:text="Load"
+        android:onClick="btnLoad"/>
+
+        <Button
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:text="Load Ext"
+            android:onClick="LoadExternal"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:text="Refresh"
+        android:onClick="refresh"/>
+
+
+
+</LinearLayout>
